@@ -1,23 +1,19 @@
-function customAlerts(a, b){
-    if (!a) {
-        throw "Error: "+a+" must be a string.";
+window.addEventListener('load', function() {
+    if (window.Notification && Notification.permission !== "granted") {
+        Notification.requestPermission(function(status) {
+            if (Notification.permission !== status) {
+                Notification.permission = status;
+            }
+        });
     }
+});
 
-    if (typeof a !== 'string') {
+function customAlerts(a, b){
+    if (!a || typeof a !== 'string') {
         throw "Error: "+a+" must be a string.";
     }
 
     else {
-        window.addEventListener('load', function() {
-            if (window.Notification && Notification.permission !== "granted") {
-                Notification.requestPermission(function(status) {
-                    if (Notification.permission !== status) {
-                        Notification.permission = status;
-                    }
-                });
-            }
-        });
-
         function notifyAlerts(data, status, title) {
             var savedStr = localStorage.getItem("n") || "";
             var dirtyStr = ""; 
