@@ -15,7 +15,7 @@ This plugin converts Jcink/JFS alerts to browser notifications.
 
 ## Issues
 
-(Guests Receiving Alerts)[https://github.com/mcstepp/jcink-alerts/issues/1] - Resolved. Function will only execute if the user has been authenticated by the application. See linked for details.
+[Guests Receiving Alerts](https://github.com/mcstepp/jcink-alerts/issues/1) - Resolved. Function will only execute if the user has been authenticated by the application. See linked for details.
  
 
 
