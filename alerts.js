@@ -9,7 +9,7 @@ window.addEventListener('load', function() {
 });
 
 function customAlerts(a, b){
-    if (!($(body).hasClass("0"))) {
+    if (($(body).hasClass("0"))) {
         return false;
     }
 
