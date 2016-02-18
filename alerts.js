@@ -9,6 +9,10 @@ window.addEventListener('load', function() {
 });
 
 function customAlerts(a, b){
+    if (!($(body).hasClass("0"))) {
+        return false;
+    }
+
     if (!a || typeof a !== 'string') {
         throw "Error: "+a+" must be a string.";
     }
