@@ -11,7 +11,7 @@ This plugin converts Jcink/JFS alerts to browser notifications.
 ```
 <body class="alerts-<!--|g_id|-->">
 ```
-* Right before the `</body>`, execute `customAlerts("<% TITLE %>");` inside of a `document ready` function (or whatever string title you want your alerts to say,.
+* Right before the `</body>`, execute `customAlerts("<% TITLE %>");` inside of a `document ready` function (or whatever string title you want your alerts to say).
 
 ## Issues
 
