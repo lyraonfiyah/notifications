@@ -1,15 +1,17 @@
-window.addEventListener('load', function() {
-    if (window.Notification && Notification.permission !== "granted") {
-        Notification.requestPermission(function(status) {
-            if (Notification.permission !== status) {
-                Notification.permission = status;
-            }
-        });
-    }
-});
+if (!(body.classList.contains('alerts-0'))) {
+    window.addEventListener('load', function() {
+        if (window.Notification && Notification.permission !== "granted") {
+            Notification.requestPermission(function(status) {
+                if (Notification.permission !== status) {
+                    Notification.permission = status;
+                }
+            });
+        }
+    });
+}
 
 function customAlerts(a, b){
-    if (($(body).hasClass("0"))) {
+    if (body.classList.contains('alerts-0')) {
         return false;
     }
 
@@ -18,6 +20,7 @@ function customAlerts(a, b){
     }
 
     else {
+        
         function notifyAlerts(data, status, title) {
             var savedStr = localStorage.getItem("n") || "";
             var dirtyStr = ""; 
