@@ -1,4 +1,4 @@
-if (!(body.classList.contains('alerts-0'))) {
+if (!($(document.body).hasClass('alerts-0'))) {
     window.addEventListener('load', function() {
         if (window.Notification && Notification.permission !== "granted") {
             Notification.requestPermission(function(status) {
@@ -11,7 +11,7 @@ if (!(body.classList.contains('alerts-0'))) {
 }
 
 function customAlerts(a, b){
-    if (body.classList.contains('alerts-0')) {
+    if ($(document.body).hasClass('alerts-0')) {
         return false;
     }
 
